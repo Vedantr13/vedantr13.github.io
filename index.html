@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Vedant Ransingh</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="images/pic.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Vedant Ransingh</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <i class="fas fa-bars" id="menu-icon"></i>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Vedant Ransingh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I engineer robust software solutions, combining my skills in web development, data analysis, and machine learning to create impactful technology.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/vedant-ransingh/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="assets/Vedant_Ransingh-Resume.pdf" class="btn">RESUME</a>
+        </div>
+        <div class="home-img">
+            <img src="images/pic.jpg" alt="Profile" />
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+            I am a recent B.Tech graduate in Computer Science & Technology from Dayananda Sagar University, Bangalore. Throughout my academic journey, I have developed a strong interest in software development, web technologies, and data-driven solutions. My coursework and projects have helped me build a solid foundation in programming languages such as Python, JavaScript, and C++, as well as tools like Git and SQL.
+        </p>
+        <p>
+            To strengthen my practical knowledge, I completed a 2-month Full Stack Web Development internship at Unified Mentor. During this internship, I worked on real-world projects involving front-end and back-end technologies including HTML, CSS, JavaScript, React.js, Node.js, and MongoDB. This experience allowed me to improve my coding skills, collaborate effectively with a team, and understand the software development lifecycle in a professional environment.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Technical <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>Programming Languages</h3>
+                <p>
+                    I am proficient in <strong>Python</strong> for machine learning and data-driven applications, <strong>C++</strong> for performance-intensive software development, and <strong>HTML, CSS, & JavaScript</strong> for creating responsive and dynamic web interfaces. My project work, including backend logic for Tastybyte.com and various web applications, demonstrates my ability to apply these languages effectively.
+                </p>
+            </div>
+            <hr>
+            <div class="skill-item">
+                <h3>AI & Machine Learning</h3>
+                <p>
+                    My expertise lies in <strong>Deep Learning</strong> and <strong>Predictive Modeling</strong>. I have hands-on experience implementing advanced architectures like <strong>CNN Models</strong> for image classification in my Animal Recognition project and <strong>LSTM Models</strong> for sequential data analysis, enabling me to build intelligent systems that solve complex problems.
+                </p>
+            </div>
+            <hr>
+            <div class="skill-item">
+                <h3>Statistical Analysis & Visualization</h3>
+                <p>
+                    I possess a strong foundation in <strong>Statistical Analysis</strong>. I am certified in creating insightful and interactive dashboards using <strong>Power BI</strong> and <strong>Tableau</strong> to transform complex data into clear, actionable business intelligence.
+                </p>
+            </div>
+            <hr>
+            <div class="skill-item">
+                <h3>Development Tools & Technologies</h3>
+                <p>
+                    I am highly proficient with modern development environments, using <strong>VS Code</strong> as my primary editor for efficient coding and debugging. Additionally, I am skilled in the <strong>Microsoft Office Suite</strong> (Word, PowerPoint) for creating professional documentation, reports, and technical presentations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="https://getform.io/f/bnlxgrdb" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
+            </div>
+            <div class="input-box">
+                <input type="text" name="subject" placeholder="Subject" required />
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+        </form>
+    </section>
+
+    <!-- Typed.js for typing animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(8, 27, 41, 0.8);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-left: 2.5rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ef;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* General Section Styling */
+section {
+    min-height: 100vh;
+    padding: 100px 10%;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heading span {
+    color: #0ef;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.multiple-text {
+    color: #0ef;
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 1.5rem 0 2rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    margin-right: 1rem;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn {
+    display: inline-block;
+    background: #0ef;
+    color: #1f242d;
+    padding: 12px 28px;
+    margin-top: 2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #0cc;
+    box-shadow: 0 0 15px #0cc;
+}
+
+.home-img img {
+    width: 22vw;
+    border-radius: 50%;
+    border: 5px solid #0ef;
+    box-shadow: 0 0 25px #0ef;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #112e42;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 56rem;
+}
+
+.skill-item {
+    margin-bottom: 2.5rem;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skill-item h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #0ef;
+    margin-bottom: 0.75rem;
+}
+
+.skill-item p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.skills hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(14, 239, 239, 0.75), rgba(0, 0, 0, 0));
+    margin: 2.5rem 0;
+}
+
+/* Contact Section */
+.contact {
+    background: #112e42;
+}
+
+.contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #081b29;
+    color: #fff;
+    border: 1px solid #0ef;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.input-box input {
+    width: 49%;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+form .btn {
+    cursor: pointer;
+}
